@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Blog</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
 </head>
 <body>
   <header>
@@ -12,23 +13,28 @@
   </header>
   
   <main>
+    <input type="text" id="searchBar" placeholder="Search for blog posts..." onkeyup="filterPosts()" style="width: 100%; padding: 10px; margin-bottom: 20px;"
+    />
+  
     <section class="blog-list">
-      <article class="blog-post">
-        <h2><a href="post1.html">Post Title 1</a></h2>
-        <p>This is a short description of the first blog post...</p>
-      </article>
+       <article class="blog-post">
+         <h2><a href="post1.html">Post Title 1</a></h2>
+         <p>This is a short description of the first blog post...</p>
+       </article>
       
-      <article class="blog-post">
-        <h2><a href="post2.html">Post Title 2</a></h2>
-        <p>This is a short description of the second blog post...</p>
-      </article>
+       <article class="blog-post">
+         <h2><a href="post2.html">Post Title 2</a></h2>
+         <p>This is a short description of the second blog post...</p>
+       </article>
       
-      <article class="blog-post">
-        <h2><a href="post3.html">Post Title 3</a></h2>
-        <p>This is a short description of the third blog post...</p>
-      </article>
+       <article class="blog-post">
+         <h2><a href="post3.html">Post Title 3</a></h2>
+         <p>This is a short description of the third blog post...</p>
+       </article>
     </section>
   </main>
+  
+  
   
   <footer>
     <p>&copy; 2024 My Blog</p>
